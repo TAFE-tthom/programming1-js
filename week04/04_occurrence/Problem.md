@@ -1,7 +1,7 @@
 
 # Character Occurrence
 
-You are tasked with writing a function that will accept a string as an argument and a character as an argument and count the number of times that character shows up in the string.
+You are tasked with writing a function that will accept a string as an argument and a character as an argument. Your function will count the number of times that character shows up in the string and return that value.
 
 
 Example 1:
