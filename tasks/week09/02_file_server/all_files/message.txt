@@ -1,0 +1,5 @@
+Hello from the file server
+
+this is a simple text message
+
+in a file
