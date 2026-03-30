@@ -9,5 +9,4 @@ if(!fs.existsSync(fullpath)) {
   console.log("First-Run, getting dependencies");
   execSync(`cd ${__dirname} && npm install`);
 }
-
 import './node_modules/vitest/vitest.mjs'
