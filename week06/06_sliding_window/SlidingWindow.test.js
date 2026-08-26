@@ -117,8 +117,8 @@ test('SlidingWindow set, get, wOffset 2, 4, 6', function() {
 
   let input1 = [20, 40];
   let input2 = [100, 200];
-  let expected1 = [20, 40, 3, 4, 45, 67]
-  let expected2 = [100, 200, 78, 22, 11, 12]
+  let expected1 = [20, 40, 3, 4, 5, 6]
+  let expected2 = [100, 200, 9, 10, 11, 12]
   
   input1.forEach((e, i) => {
     sw.setElement(e, i);
