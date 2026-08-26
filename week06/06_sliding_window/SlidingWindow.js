@@ -24,4 +24,4 @@ class SlidingWindow {
   
 }
 
-module.exports - SlidingWindow;
+module.exports = SlidingWindow;
