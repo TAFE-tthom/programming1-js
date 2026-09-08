@@ -1,4 +1,4 @@
-
+import { test, expect } from 'vitest'
 import { Stack } from './stack'
 
 test("constructing stack", () => {

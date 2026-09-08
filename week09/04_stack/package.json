@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "jest": "^29.7.0",
+  "type": "module",
+  "dependencies": {
+    "vitest": "^4.1.11"
   }
 }
