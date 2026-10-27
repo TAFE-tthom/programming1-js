@@ -1,4 +1,5 @@
-const { join } = require('./adding_arrays.js');
+import { test, expect } from 'vitest';
+import { join } from './adding_arrays.js';
 
 function Adding_Empty_Arrays()
 {
