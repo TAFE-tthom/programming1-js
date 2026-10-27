@@ -1,6 +1,5 @@
-
-
-const intersection = require('./intersection.js')
+import intersection from './intersection.js'
+import { test, expect } from 'vitest';
 
 function ListIntersection_Empty_Lists_Test()
 {
@@ -10,9 +9,9 @@ function ListIntersection_Empty_Lists_Test()
   let result = intersection(A, B);
   let answer =  [ ];
 
-  expect(answer.Count(), result.Count());
+  expect(answer.length, result.length);
   expect(result).toBeDefined();
-  expect(answer).toBe(result);
+  expect(answer).toEqual(result);
 }
 
 
@@ -24,9 +23,9 @@ function ListIntersection_Single_Lists_Test()
   let result = intersection(A, B);
   let answer =  [ 1 ];
 
-  expect(answer.Count(), result.Count());
+  expect(answer.length, result.length);
   expect(result).toBeDefined();
-  expect(answer).toBe(result);
+  expect(answer).toEqual(result);
 }
 
 
@@ -39,9 +38,9 @@ function ListIntersection_Single_With_3_Elements_Each()
   let result = intersection(A, B);
   let answer =  [ 2 ];
 
-  expect(answer.Count(), result.Count());
+  expect(answer.length, result.length);
   expect(result).toBeDefined();
-  expect(answer).toBe(result);
+  expect(answer).toEqual(result);
 }
 
 
@@ -51,9 +50,9 @@ function ListIntersection_Intersection_1_No_Overlap() {
   let result = intersection(A, B);
   let answer =  [  ];
 
-  expect(answer.Count(), result.Count());
+  expect(answer.length, result.length);
   expect(result).toBeDefined();
-  expect(answer).toBe(result);
+  expect(answer).toEqual(result);
 }
 
 
@@ -65,9 +64,9 @@ function ListIntersection_Intersection_1_Full_Overlap() {
   let answer =  [ 1, 2, 3 ];
 
   expect(result).toBeDefined();
-  expect(answer.Count(), result.Count());
-  for(let i = 0; i < answer.Count(); i++) {
-		 Assert.True(result.Contains(answer[i]));
+  expect(answer.length, result.length);
+  for(let i = 0; i < answer.length; i++) {
+		 expect(result.includes(answer[i])).not.toBe(-1);
   }
 }
 
@@ -80,9 +79,9 @@ function ListIntersection_Intersection_1_Overlap() {
   let answer =  [ 1, 2 ];
 
   expect(result).toBeDefined();
-  expect(answer.Count(), result.Count());
-  for(let i = 0; i < answer.Count(); i++) {
-		 Assert.True(result.Contains(answer[i]));
+  expect(answer.length, result.length);
+  for(let i = 0; i < answer.length; i++) {
+		 expect(result.includes(answer[i])).not.toBe(-1);
   }
 }
 
@@ -95,9 +94,9 @@ function ListIntersection_Intersection_2_Overlap() {
   let answer =  [ 3, 4 ];
 
   expect(result).toBeDefined();
-  expect(answer.Count(), result.Count());
-  for(let i = 0; i < answer.Count(); i++) {
-		 Assert.True(result.Contains(answer[i]));
+  expect(answer.length, result.length);
+  for(let i = 0; i < answer.length; i++) {
+		 expect(result.includes(answer[i])).not.toBe(-1);
   }
 }
 
@@ -110,9 +109,9 @@ function ListIntersection_Intersection_Duplicate() {
   let answer =  [ 3, 4 ];
 
   expect(result).toBeDefined();
-  expect(answer.Count(), result.Count());
-  for(let i = 0; i < answer.Count(); i++) {
-		 Assert.True(result.Contains(answer[i]));
+  expect(answer.length, result.length);
+  for(let i = 0; i < answer.length; i++) {
+		 expect(result.includes(answer[i])).not.toBe(-1);
   }
 }
 
